@@ -3,4 +3,397 @@
 @import "reset";
 @import "libs";
 @import "global";
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.logo {
+	margin-left: 16px;
+}
+.phone {
+	margin-top: 11px;
+	margin-right: 43px;
+}
+.menu {
+	margin-top: 16px;
+}
+.menu__list {
+	display: flex;
+}
+.menu__item + .menu__item {
+	margin-left: 30px;
+}
+.menu__link {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #001e64;
+	font-size: 18px;
+	line-height: 21px;
+}
+.menu__link:hover {
+	border-bottom: 1px solid #001e64;
+}
+.header__content {
+	background-image: url(../images/header-bg.png);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+	margin-top: -100px;
+	min-height: calc(100vh - 50px);
+}
+.title {
+	color: #001e64;
+	font-family: "Roboto Slab", serif;
+	font-weight: 700;
+	line-height: 95px;
+	font-size: 72px;
+	max-width: 589px;
+	padding-top: 170px;
+	padding-left: 112px;
+	margin-bottom: 60px;
+}
+.header-slider {
+	max-width: 522px;
+	padding-left: 112px;
+	padding-top: 57px;
+	padding-bottom: 135px;
+}
+.header-slider__text {
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff;
+}
+.slick-prev,
+.slick-next {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+	left: 40px;
+}
+.slick-prev {
+	top: 0;
+}
+.slick-next {
+	bottom: 0;
+}
+.slick-dots {
+	list-style: none;
+	position: absolute;
+	left: 35px;
+	top: 58px;
+	bottom: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.slick-dots button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: 24px;
+	line-height: 28px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.slick-active button {
+	opacity: 1;
+}
+.slick-dots button::before {
+	content: "0";
+}
+.slick-dots li:nth-child(n + 10) button::before {
+	content: "";
+}
+.header__content-btn {
+	color: #fff;
+	font-size: 24px;
+	font-family: "Roboto Slab", serif;
+	font-weight: 700;
+	line-height: 32px;
+	padding: 14px 88px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 112px;
+	display: inline-block;
+	transform: translateY(-100px);
+	position: absolute;
+	transition: all 0.3s;
+}
+.header__content-btn:hover {
+	color: #001e64;
+	background-color: rgba(255, 255, 255);
+}
+.header__content-box {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 30px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+}
+.header__content-link--active {
+	font-weight: 700;
+}
+.product {
+	padding-top: 100px;
+	margin-bottom: 40px;
+}
+.product__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.product__name {
+	width: 510px;
+	text-align: center;
+	padding-top: 41px;
+}
+.product__name-item {
+	font-size: 24px;
+	line-height: 33.65px;
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	cursor: pointer;
+}
+.slick-current .product__name-item {
+	font-weight: 700;
+	font-size: 36px;
+	color: #001e64;
+}
+.product__name .slick-slide + .slick-slide {
+	margin-top: 30px;
+}
+
+.product-prev {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.product-prev,
+.product-next {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+}
+.product__content {
+	width: 600px;
+}
+.product__content-box {
+	display: flex;
+	justify-content: space-between;
+}
+.product__content-img {
+	object-fit: cover;
+}
+.product__content-list {
+	width: 291px;
+	list-style: none;
+}
+.product__content-item {
+	margin-bottom: 30px;
+}
+.product__content-item span {
+	display: block;
+	margin-bottom: 10px;
+	color: #001e64;
+	font-size: 18px;
+	font-family: "Roboto Slab";
+}
+.product__content-title {
+	padding-top: 20px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+	color: #001e64;
+	margin-bottom: 20px;
+}
+.product__content-text {
+	margin-bottom: 25px;
+}
+.product__content-btn {
+	display: inline-block;
+	color: #001e64;
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	padding: 12px 85px;
+	border: 1px solid #001e64;
+	border-radius: 20px;
+	background-color: transparent;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.product__content-btn:hover {
+	color: #fff;
+	background-color: #001e64;
+}
+.seafood-box {
+	background-image: url("../images/seafood-bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 290px 0 95px;
+	font-family: "Roboto Slab";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+.seafood-box__items {
+	display: flex;
+	justify-content: space-around;
+}
+.seafood-box__item {
+	width: 180px;
+	min-height: 165px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url("../images/seafood-decor.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.seafood {
+	padding: 100px 0;
+}
+.seafood__items {
+	margin-bottom: 100px;
+}
+.seafood__item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.seafood__item-content {
+}
+.seafood__item-title {
+	max-width: 490px;
+	margin-bottom: 30px;
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29px;
+	color: #001e64;
+}
+.seafood__item-text {
+	max-width: 420px;
+	margin-bottom: 20px;
+}
+.seafood__item--text-right .seafood__item-title {
+	max-width: 420px;
+}
+.seafood__item--text-right .seafood__item-content {
+	margin-right: 180px;
+}
+.seafood__blockquote {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+.seafood__blockquote-text {
+	max-width: 530px;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.contacts {
+	background-image: url(../images/contacts-bg.jpg);
+	background-repeat: no-repeat;
+
+	background-position: bottom left;
+}
+.contacts__box {
+	margin-left: auto;
+	width: 390px;
+	background-color: #fff;
+	padding: 33px 0 33px 20px;
+}
+
+.contacts__box-text {
+	width: 195px;
+	font-family: "Roboto Slab", serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #001e64;
+	margin-bottom: 30px;
+}
+.contacts__box-list {
+	list-style-type: none;
+	font-size: 18px;
+	line-height: 21px;
+}
+.contacts__box-item {
+	margin-bottom: 30px;
+}
+.contacts__box-item span {
+	display: block;
+}
+.footer {
+	padding: 25px 0 110px;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 45px 0 23px;
+}
+.footer__inner .menu {
+	padding-bottom: 30px;
+}
+.footer-social__list {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	padding-bottom: 19px;
+}
+.footer-social__item + .footer-social__item {
+	margin-left: 10px;
+}
+.footer-social__link path {
+	transition: all 0.3s;
+}
+.footer-social__link:hover path {
+	fill: #001e64;
+}
+.menu__btn {
+	width: 40px;
+	border: none;
+	background-color: transparent;
+	padding: 13px 0;
+	position: relative;
+	display: none;
+	z-index: 10;
+}
+.menu__btn::after,
+.menu__btn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background-color: #001e64;
+}
+.menu__btn::after {
+	bottom: 0;
+}
+.menu__btn::before {
+	top: 0;
+}
+.menu__btn span {
+	display: block;
+	height: 4px;
+	background-color: #001e64;
+}
+
 @import "media";
