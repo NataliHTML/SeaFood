@@ -123,10 +123,15 @@
 	display: inline-block;
 	transform: translateY(-100px);
 	position: absolute;
+	transition: all 0.3s;
+}
+.header__content-btn:hover {
+	color: #001e64;
+	background-color: rgba(255, 255, 255);
 }
 .header__content-box {
 	display: flex;
-	margin-left: 100%;
+	justify-content: flex-end;
 	margin-right: 30px;
 	font-size: 18px;
 	line-height: 21px;
@@ -137,6 +142,7 @@
 }
 .product {
 	padding-top: 100px;
+	margin-bottom: 40px;
 }
 .product__inner {
 	display: flex;
@@ -224,6 +230,11 @@
 	background-color: transparent;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+.product__content-btn:hover {
+	color: #fff;
+	background-color: #001e64;
 }
 .seafood-box {
 	background-image: url("../images/seafood-bg.jpg");
@@ -295,4 +306,94 @@
 	font-size: 18px;
 	margin: 0 auto;
 }
+.contacts {
+	background-image: url(../images/contacts-bg.jpg);
+	background-repeat: no-repeat;
+
+	background-position: bottom left;
+}
+.contacts__box {
+	margin-left: auto;
+	width: 390px;
+	background-color: #fff;
+	padding: 33px 0 33px 20px;
+}
+
+.contacts__box-text {
+	width: 195px;
+	font-family: "Roboto Slab", serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #001e64;
+	margin-bottom: 30px;
+}
+.contacts__box-list {
+	list-style-type: none;
+	font-size: 18px;
+	line-height: 21px;
+}
+.contacts__box-item {
+	margin-bottom: 30px;
+}
+.contacts__box-item span {
+	display: block;
+}
+.footer {
+	padding: 25px 0 110px;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 45px 0 23px;
+}
+.footer__inner .menu {
+	padding-bottom: 30px;
+}
+.footer-social__list {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	padding-bottom: 19px;
+}
+.footer-social__item + .footer-social__item {
+	margin-left: 10px;
+}
+.footer-social__link path {
+	transition: all 0.3s;
+}
+.footer-social__link:hover path {
+	fill: #001e64;
+}
+.menu__btn {
+	width: 40px;
+	border: none;
+	background-color: transparent;
+	padding: 13px 0;
+	position: relative;
+	display: none;
+	z-index: 10;
+}
+.menu__btn::after,
+.menu__btn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background-color: #001e64;
+}
+.menu__btn::after {
+	bottom: 0;
+}
+.menu__btn::before {
+	top: 0;
+}
+.menu__btn span {
+	display: block;
+	height: 4px;
+	background-color: #001e64;
+}
+
 @import "media";
